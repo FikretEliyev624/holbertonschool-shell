@@ -1,2 +1,6 @@
 #!/bin/bash
-echo "hello $(whoami)"
+if [ -n "$USER" ]; then
+    echo "hello $USER"
+else
+    echo "hello $(whoami)"
+fi
