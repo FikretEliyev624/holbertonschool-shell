@@ -3,6 +3,6 @@
 count=0
 until [ $count -gt 9 ];
 do
-echo "BEST School"
-((count++))
+	echo "BEST School"
+	((count++))
 done
