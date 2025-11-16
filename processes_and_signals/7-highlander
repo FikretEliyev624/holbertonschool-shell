@@ -1,7 +1,11 @@
 #!/usr/bin/env bash
-# I am invincible
-while true;do
-	echo "To infinity and beyond"
-	trap 'echo "Killed" && kill' SIGTERM
-	sleep 2
+# displays text indefinitely and reacts to SIGTERM
+
+trap "echo I am invincible!!!" SIGTERM
+
+while true
+do
+    echo "To infinity and beyond"
+    sleep 2
 done
+

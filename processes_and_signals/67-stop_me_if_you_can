@@ -1,3 +1,5 @@
 #!/usr/bin/env bash
-# Do not stop me now
-pkill -f "7-highlander"
+# sends SIGTERM to 7-highlander process
+
+pkill -f 7-highlander
+
